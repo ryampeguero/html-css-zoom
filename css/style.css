@@ -33,7 +33,7 @@ img {
 }
 
 .user-card {
-    width: calc(100% / 7);
+    min-width: calc(100% / 7);
     /* padding: 20px; */
     background-image: url(https://picsum.photos/200);
     background-repeat: no-repeat;
@@ -46,16 +46,7 @@ img {
     border: 1px solid blue;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
 
-    /* debug */
-    min-height: 100px;
-}
 
 .relative {
     position: relative;
@@ -65,4 +56,21 @@ img {
 main {
     background-color: black;
     height: 90vh;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 10px;
+    min-width: 50%;
+    background-color: rgba(0,0,0,.4);
+
+    /* debug */
+    /* min-height: 100px; */
+}
+
+.overlay span {
+    font-size: 1.5rem;
+    color: white;
 }
