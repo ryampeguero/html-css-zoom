@@ -9,40 +9,54 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* COMMON */
 
 .container {
-    width: 80%;
-    max-width: 4000px;
+    width: 90%;
+    max-width: 6000px;
     margin: 0 auto;
-
+    margin-top: 50px;
+    overflow-y: scroll;
     /* debug */
-    min-height: 800px;
+    max-height: 800px;
     border: 1px solid white;
 }
 
 .flex {
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
     flex-wrap: wrap;
+   
 }
 
 .f-center {
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    
+}
+
+/* utilietes */
+.m-t-10 {
+    margin-top: 10;
 }
 
 .user-card {
-    min-width: calc(100% / 7);
+    min-width: calc(100% / 7 - 40px);
     /* padding: 20px; */
-    background-image: url(https://picsum.photos/200);
+    background-image: url(https://picsum.photos/100/300);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    margin: 10px;
     /* debug */
-    min-height: 400px;
-    
+    height: 150px;    
     border: 1px solid blue;
 }
 
@@ -56,14 +70,15 @@ img {
 main {
     background-color: black;
     height: 90vh;
+    overflow-y: scroll;
 }
 
 .overlay {
     position: absolute;
     bottom: 10px;
     left: 0;
-    padding: 10px;
-    min-width: 50%;
+    padding: 5px;
+    min-width: 50px;
     background-color: rgba(0,0,0,.4);
 
     /* debug */
@@ -71,6 +86,20 @@ main {
 }
 
 .overlay span {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: white;
+}
+
+.top-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #303030;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* debug */
+
 }
